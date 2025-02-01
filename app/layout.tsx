@@ -3,7 +3,7 @@ import '@fontsource-variable/inter'
 import './globals.css'
 import type { Metadata } from 'next'
 // import { Navbar } from '@/components/layout/Navbar'
-import Footer from '@/components/layout/Footer'
+import Footer from '@/components/common/Footer'
 
 export const metadata: Metadata = {
   title: 'AnyTxn',

@@ -1,12 +1,22 @@
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 @layer base {
   :root {
     /* Custom CSS Variables */
     --blue-main: #0066FF;
     --orange-main: #FE8B53;
+  }
+
+  .container{
+    max-width: 1080px;
+    margin: 0 auto;
   }
 
   html {
@@ -16,12 +26,7 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: "Montserrat Variable", sans-serif;
   }
-  .container{
-    display: flex;
-    justify-content: center;
-    max-width: 1080px;
-    margin: 0 auto;
-  }
+  
 }
 
 @keyframes slideInFromTopLeft {
@@ -57,9 +62,9 @@
   }
 
   .hero-image-polygon {
-    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%); /* Example clip-path */
-    width: 100%; /* Ensure it takes full width */
-    height: 100%; /* Ensure it takes full height */
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%); 
+    width: 100%; 
+    height: 100%; 
   }
 }
 
