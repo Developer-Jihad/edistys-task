@@ -34,7 +34,7 @@ function TrustedBy() {
         );
       }
     });
-  }, [trustedBy]);
+  }, []);
 
   return (
     <section className="container p-8 lg:p-20 my-20 ">

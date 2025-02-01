@@ -3,13 +3,15 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
+import type { Swiper as SwiperType } from 'swiper';
 import { Pagination } from "swiper/modules";
 import { useRef, useState } from "react";
 import { slides } from '@/data/slides';
+import Image from "next/image";
 
 function Technology() {
-  const swiperRef = useRef<any>(null); // Reference for Swiper instance
-  const [activeIndex, setActiveIndex] = useState(0); // Track active slide index
+  const swiperRef = useRef<SwiperType | null>(null); // Specify the type for Swiper reference
+  const [activeIndex, setActiveIndex] = useState<number>(0); // Track active slide index
 
   return (
     <section className="container px-8 lg:px-20 ">
@@ -50,7 +52,7 @@ function Technology() {
             <SwiperSlide key={index}>
               <article className="grid lg:grid-cols-2 grid-cols-1 gap-8 lg:p-16 p-6 rounded-2xl bg-white">
               <figure className="h-full lg:h-96">
-                  <img src={slide.image} alt={slide.title} className="h-full w-full object-cover rounded-xl" />
+                  <Image src={slide.image} alt={slide.title} className="h-full w-full object-cover rounded-xl" />
                 </figure>
                 <section className="space-y-6">
                   <header className="space-y-6">
