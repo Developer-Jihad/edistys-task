@@ -35,7 +35,7 @@ export default function Hero() {
                   Embrace the future of finance
                 </h1>
                 <h6 className="font-bold text-white leading-[2] lg:pr-10">
-                  Reimagine financial services with AnyTech's open platform,
+                  Reimagine financial services with AnyTechs open platform,
                   distributed banking solution that powers transformation
                 </h6>
               </header>
