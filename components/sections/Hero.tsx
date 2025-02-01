@@ -16,7 +16,7 @@ export default function Hero() {
     const ctx = gsap.context(() => {
       gsap.fromTo(
         imageRef.current,
-        { x: "20%", opacity: 1 },
+        { x: "10%", opacity: 1 },
         { x: "0%", opacity: 1, duration: 1.5, ease: "power3.out", delay: 0.5 }
       );
     });
@@ -57,7 +57,7 @@ export default function Hero() {
 
         {/* Hero Background for Large Devices */}
         <div className="relative overflow-hidden hidden lg:block ">
-          <div className="absolute bottom-0 right-0  md:w-[65%] md:h-[100%] bg-clip-hero-image  ">
+          <div className="absolute bottom-0 right-0  md:w-[70%] md:h-[100%] bg-clip-hero-image  ">
             <div
               ref={imageRef}
               className="w-full h-full "
