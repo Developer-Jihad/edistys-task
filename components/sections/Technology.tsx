@@ -52,7 +52,7 @@ function Technology() {
             <SwiperSlide key={index}>
               <article className="grid lg:grid-cols-2 grid-cols-1 gap-8 lg:p-16 p-6 rounded-2xl bg-white">
               <figure className="h-full lg:h-96">
-                  <Image src={slide.image} alt={slide.title} className="h-full w-full object-cover rounded-xl" />
+                  <Image src={slide.image} width={1000} height={1000} alt={slide.title} className="h-full w-full object-cover rounded-xl" />
                 </figure>
                 <section className="space-y-6">
                   <header className="space-y-6">
