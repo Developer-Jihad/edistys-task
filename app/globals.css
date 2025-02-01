@@ -2,20 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Custom CSS Variables */
+    --blue-main: #0066FF;
+    --orange-main: #FE8B53;
+  }
+
+  html {
+    font-family: "Inter Variable", sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat Variable", sans-serif;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    max-width: 1080px;
+    margin: 0 auto;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes slideInFromTopLeft {
+  0% {
+    opacity: 0;
+    transform: translate(-50px, -50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }
+
+.animate-slide-in {
+  animation: slideInFromTopLeft 1s ease-out forwards;
+}
+.animate-right-slide-in {
+  animation: slideInFromTopLeft 1s ease-out backwards;
+}
+
+@layer components {
+
+  .bg-clip-hero-container {
+    background: radial-gradient(59.82% 121.73% at -9.66% 130.31%, #00e9ea 0%, #1f80f0 52.08%, #005bc4 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
+  }
+
+
+  .bg-clip-hero-image {
+    clip-path: polygon(67% 0, 100% 0, 100% 60%, 75% 100%, 0 100%, 32% 51%);
+    -webkit-clip-path: polygon(67% 0, 100% 0, 100% 60%, 75% 100%, 0 100%, 32% 51%);
+  }
+
+  .hero-image-polygon {
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%); /* Example clip-path */
+    width: 100%; /* Ensure it takes full width */
+    height: 100%; /* Ensure it takes full height */
+  }
+}
+

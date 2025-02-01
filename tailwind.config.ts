@@ -1,18 +1,33 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss'
 
-export default {
+const config: Config = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'blue-main': 'var(--blue-main)',
+        'orange-main': 'var(--orange-main)',
       },
+      spacing: {
+        'sm': '8px',
+        'md': '16px',
+        'lg': '24px',
+      },
+      fontFamily: {
+        'montserrat': ['Montserrat Variable', 'sans-serif'],
+        'inter': ['Inter Variable', 'sans-serif'],
+      },
+      flex: {
+        '65': '0 0 65%',
+        '75': '0 0 75%',
+      }
     },
   },
   plugins: [],
-} satisfies Config;
+}
+
+export default config

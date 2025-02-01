@@ -1,0 +1,37 @@
+my-website/
+├── app/
+│   ├── (routes)/
+│   │   ├── about/
+│   │   │   └── page.tsx
+│   │   ├── contact/
+│   │   │   └── page.tsx
+│   │   ├── products/
+│   │   │   └── page.tsx
+│   │   └── page.tsx
+│   ├── layout.tsx
+│   └── globals.css
+├── components/
+│   ├── common/
+│   │   ├── Button.tsx
+│   │   ├── Container.tsx
+│   │   └── ParallaxBackground.tsx
+│   ├── layout/
+│   │   ├── Navbar.tsx
+│   │   └── Footer.tsx
+│   └── sections/
+│       ├── Hero.tsx
+│       ├── About.tsx
+│       ├── Philosophy.tsx
+│       ├── Technology.tsx
+│       ├── Trusted.tsx
+│       └── Contact.tsx
+├── lib/
+│   └── gsap.ts
+├── types/
+│   └── index.ts
+├── utils/
+│   └── constants.ts
+├── public/
+│   └── images/
+└── styles/
+    └── components/
