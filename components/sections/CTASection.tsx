@@ -26,12 +26,12 @@ const CTASection = () => {
 
   return (
     <section
-      className={`bg-primary h-[350] md:h-[500px] overflow-hidden ${
+      className={`bg-primary h-[500px] overflow-hidden ${
         isLargeScreen ? "cta-clip-lg" : "cta-clip-sm"
       }`}
     >
       <div className="container relative">
-        <div className="relative lg:absolute flex flex-col w-full h-[350] md:h-[500px] items-center justify-center text-center text-white z-20 p-8 mt-4 md:mt-14 ">
+        <div className="relative lg:absolute flex flex-col w-full h-[500px] items-center justify-center text-center text-white z-20 p-8 mt-4 md:mt-14 ">
           <h2 className="text-2xl md:text-4xl font-bold mb-[24px]">
             Let Us Connect
           </h2>
