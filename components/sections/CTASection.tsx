@@ -60,7 +60,7 @@ const CTASection = () => {
         </h2>
         <p className=" md:text-2xl mb-[30px]">
           Talk to us to find out how we can transform your organisation for the
-          future
+          future.
         </p>
         <Button />
       </div>
