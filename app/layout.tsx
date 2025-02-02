@@ -2,8 +2,8 @@ import '@fontsource-variable/montserrat'
 import '@fontsource-variable/inter'
 import './globals.css'
 import type { Metadata } from 'next'
-// import { Navbar } from '@/components/layout/Navbar'
-import Footer from '@/components/common/Footer'
+import Navbar from "@/components/layout/Navbar";
+import Footer from '@/components/layout/Footer'
 
 export const metadata: Metadata = {
   title: 'AnyTxn',
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {/* <Navbar /> */}
+        <Navbar />
         {children}
         <Footer />
       </body>

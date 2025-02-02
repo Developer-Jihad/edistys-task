@@ -4,10 +4,18 @@ export type NavItem = {
   href: string;
   isExternal?: boolean;
 }
+
+export interface Philosophy {
+  icon: string;
+  title: string;
+  description: string;
+}
+
 export interface Slide {
   title: string;
   subtitle: string;
-  description: string;
+  description1: string;
+  description2: string;
   image: string;
 }
 export interface TrustedBy {

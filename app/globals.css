@@ -1,20 +1,19 @@
-@import 'swiper/css';
-@import 'swiper/css/navigation';
-@import 'swiper/css/pagination';
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   :root {
     /* Custom CSS Variables */
-    --blue-main: #0066FF;
-    --orange-main: #FE8B53;
+    --blue-main: #0066ff;
+    --orange-main: #fe8b53;
   }
 
-  .container{
+  .container {
     max-width: 1080px;
     margin: 0 auto;
   }
@@ -22,11 +21,15 @@
   html {
     font-family: "Inter Variable", sans-serif;
   }
-  
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: "Montserrat Variable", sans-serif;
   }
-  
 }
 
 @keyframes slideInFromTopLeft {
@@ -47,24 +50,44 @@
   animation: slideInFromTopLeft 1s ease-out backwards;
 }
 
-@layer components {
-
-  .bg-clip-hero-container {
-    background: radial-gradient(59.82% 121.73% at -9.66% 130.31%, #00e9ea 0%, #1f80f0 52.08%, #005bc4 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
-  }
-
-
-  .bg-clip-hero-image {
-    clip-path: polygon(67% 0, 100% 0, 100% 60%, 75% 100%, 0 100%, 32% 51%);
-    -webkit-clip-path: polygon(67% 0, 100% 0, 100% 60%, 75% 100%, 0 100%, 32% 51%);
-  }
-
-  .hero-image-polygon {
-    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%); 
-    width: 100%; 
-    height: 100%; 
-  }
+.bg-primary {
+  background: radial-gradient(
+    59.82% 121.73% at -9.66% 130.31%,
+    #00e9ea 0%,
+    #1f80f0 52.08%,
+    #005bc4 100%
+  );
+}
+.hero-clip-lg {
+  clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
+}
+.hero-clip-sm {
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+}
+.cta-clip-lg {
+  clip-path: polygon(0% 39%, 0% 100%, 100% 100%, 100% 0%);
+  -webkit-clip-path: polygon(0% 39%, 0% 100%, 100% 100%, 100% 0%);
+}
+.cta-clip-sm {
+  clip-path: polygon(0% 13%, 0% 100%, 100% 100%, 100% 0%);
+  -webkit-clip-path: polygon(0% 13%, 0% 100%, 100% 100%, 100% 0%);
 }
 
+.hero-image-clip-lg {
+  clip-path: polygon(67% 0, 100% 0, 100% 60%, 75% 100%, 0 100%, 32% 51%);
+  -webkit-clip-path: polygon(
+    67% 0,
+    100% 0,
+    100% 60%,
+    75% 100%,
+    0 100%,
+    32% 51%
+  );
+}
+
+.hero-image-clip-sm {
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+}

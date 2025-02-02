@@ -57,10 +57,26 @@ const ParallaxBackground = () => {
     };
 
     // Initial animation for background layers
-    gsap.fromTo(bg1Ref.current, { x: '-10%', y: '-10%' }, { x: '0%', y: '0%', duration: 1.5, ease: "power2.out" });
-    gsap.fromTo(bg2Ref.current, { x: '-10%', y: '-10%' }, { x: '0%', y: '0%', duration: 1.5, ease: "power2.out" });
-    gsap.fromTo(bg3Ref.current, { x: '-10%', y: '-10%' }, { x: '0%', y: '0%', duration: 1.5, ease: "power2.out" });
-    gsap.fromTo(fgRef.current, { x: '100%', y: '-100%' }, { x: '0%', y: '0%', duration: 1.5, delay: 0.2, ease: "power2.out" });
+    gsap.fromTo(
+      bg1Ref.current,
+      { x: "-10%", y: "-10%" },
+      { x: "0%", y: "0%", duration: 1.5, ease: "power2.out" }
+    );
+    gsap.fromTo(
+      bg2Ref.current,
+      { x: "-10%", y: "-10%" },
+      { x: "0%", y: "0%", duration: 1.5, ease: "power2.out" }
+    );
+    gsap.fromTo(
+      bg3Ref.current,
+      { x: "-10%", y: "-10%" },
+      { x: "0%", y: "0%", duration: 1.5, ease: "power2.out" }
+    );
+    gsap.fromTo(
+      fgRef.current,
+      { x: "100%", y: "-100%" },
+      { x: "0%", y: "0%", duration: 1.5, delay: 0.2, ease: "power2.out" }
+    );
 
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
