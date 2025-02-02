@@ -54,9 +54,9 @@ const CTASection = () => {
       }`}
       ref={sectionRef}
     >
-      <div className=" flex flex-col w-full h-full items-center justify-center text-center absolute text-white z-20 p-8 mt-4 md:mt-14 ">
+      <div className="absolute flex flex-col w-full h-full items-center justify-center text-center text-white z-20 p-8 mt-4 md:mt-14 ">
         <h2 className="text-2xl md:text-4xl font-bold mb-[24px]">
-          Let&apos;s Connect
+          Let Us Connect
         </h2>
         <p className=" md:text-2xl mb-[30px]">
           Talk to us to find out how we can transform your organisation for the
@@ -65,7 +65,7 @@ const CTASection = () => {
         <Button />
       </div>
 
-      <div className="absolute hidden md:block relative z-10">
+      <div className="hidden lg:block relative z-10">
         <ParallaxBackground />
       </div>
     </section>
