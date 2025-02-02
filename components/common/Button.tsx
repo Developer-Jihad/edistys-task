@@ -5,9 +5,9 @@ function Button() {
   return (
     <Link
       className="py-4 px-8 lg:w-64 rounded text-white font-bold flex items-center justify-center bg-orange-main "
-      href="https://jihad-info.vercel.app/"
+      href="/"
     >
-      <span className="pr-4">Reach Out to Me</span>
+      <span className="pr-4">Reach Out to Us</span>
       <svg
         width="6"
         height="9"

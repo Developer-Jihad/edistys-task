@@ -4,9 +4,9 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-gray-900  py-10">
-      <div className="container  text-center text-white ">
+      <div className="container text-center text-white ">
         <div>
-          <div className="text-gray-300 text-base md:text-base px-2 py-3 sm:p-0">
+          <div className="text-gray-300 text-base md:text-base px-4 py-3 sm:p-0">
             <p className="inline-flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
               <span className="text-green-400">

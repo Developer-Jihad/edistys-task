@@ -68,12 +68,12 @@ export default function Hero() {
         </div>
 
         {/* Hero Background for Small Devices */}
-        <div className="lg:hidden absolute bg-primary w-full h-[500px] sm:right-0 sm:top-0 top-[-80px] animate-slide-in">
+        <div className="lg:hidden absolute bg-primary w-full h-[500px] sm:right-0 sm:top-0 top-[-15px] animate-slide-in">
           <Image
             src={heroSVG}
             alt="Hero SVG"
             fill
-            className="object-cover scale-125"
+            className="object-cover"
           />
         </div>
 
