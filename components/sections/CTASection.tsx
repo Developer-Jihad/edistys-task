@@ -41,11 +41,10 @@ const CTASection = () => {
           </p>
           <Button />
         </div>
-
+      </div>
         <div className="hidden lg:block relative z-10">
           <ParallaxBackground />
         </div>
-      </div>
     </section>
   );
 };
