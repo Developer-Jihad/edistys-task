@@ -1,10 +1,17 @@
-# Edisty's Task
+# AnyTech Solution
 
-![Project Logo](https://i.ibb.co.com/C5mX5MzK/Edistys-task.png) 
+![Project Image](https://i.ibb.co.com/C5mX5MzK/Edistys-task.png) 
+
 
 ## Overview
 
-**Edisty's Task** is a modern web application built with Next.js, React, and Tailwind CSS. This project aims to provide a seamless user experience with smooth scrolling, responsive design, and dynamic content sections.
+**AnyTech** is a modern web application built with Next.js, React, and Tailwind CSS. This project aims to provide a seamless user experience with smooth scrolling, responsive design, and dynamic content sections.
+
+## Live Demo
+
+You can view the live version of the project at the following link:
+
+[Live Demo - Edisty's Task](https://edistys-task-phi.vercel.app/)
 
 ## Table of Contents
 
@@ -13,7 +20,7 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Scripts](#scripts)
-- [My Info](#scripts)
+- [Contact Me](#contact-me)
 
 ## Features
 
@@ -68,9 +75,9 @@ The following scripts are available in this project:
 - `start`: Starts the production server.
 - `lint`: Runs the linter to check for code quality issues.
 
----
 
-## contact
+
+## Contact Me
  
 **Looking for a Reliable Working Partner?**
 
