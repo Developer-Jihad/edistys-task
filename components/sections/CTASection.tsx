@@ -25,7 +25,7 @@ const CTASection = () => {
   const isLargeScreen = useIsLargeScreen();
 
   return (
-    <section
+    <section id="contact"
       className={`bg-primary h-[500px] overflow-hidden ${
         isLargeScreen ? "cta-clip-lg" : "cta-clip-sm"
       }`}

@@ -4,7 +4,7 @@ import React from "react";
 function Button() {
   return (
     <Link
-      className="py-4 px-8 lg:w-64 rounded text-white font-bold flex items-center justify-center bg-orange-main "
+      className="py-4 px-8 md:w-64 rounded text-white font-bold flex items-center justify-center bg-orange-main "
       href="/"
     >
       <span className="pr-4">Reach Out to Us</span>

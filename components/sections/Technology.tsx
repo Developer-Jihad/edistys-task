@@ -15,7 +15,7 @@ function Technology() {
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
   return (
-    <section className="container px-8 lg:px-20 ">
+    <section id="technology" className="container px-8 lg:px-20 ">
       <div className="text-center">
         <Header
           title={"TECHNOLOGY BUILT FOR YOU"}

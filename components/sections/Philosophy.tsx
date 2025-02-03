@@ -56,7 +56,7 @@ const Philosophy = () => {
   }, []);
 
   return (
-    <section className="container mb-[128px] p-8 lg:p-20" ref={sectionRef}>
+    <section id="philosophy" className="container mb-[128px] p-8 lg:p-20" ref={sectionRef}>
       {/* Header */}
       <div className="text-center">
         <Header

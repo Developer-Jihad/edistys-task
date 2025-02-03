@@ -5,6 +5,7 @@ import { trustedBy } from "@/data/trustedBy";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef } from "react";
+import Header from './../common/Header';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -37,13 +38,17 @@ function TrustedBy() {
   }, []);
 
   return (
-    <section className="container p-8 lg:p-20 my-20 ">
-      <h6 className="text-center text-2xl lg:text-4xl font-bold uppercase text-blue-500 my-10 border-b-2 pb-14">
-        TRUSTED BY THE BEST
-      </h6>
+    <section id="trusts" className="container p-8 lg:p-20 my-20 ">
+      <div className="text-center">
+        <Header
+          title={"TRUSTED BY THE BEST"}
+          subtitle={"We Gained Lots of Trust"}
+        />
+      </div>
+      <hr className="my-7" />
       <div className="flex flex-col md:flex-row justify-between">
         {trustedBy.map((item, index) => (
-          <div key={item.key} className="text-center rounded-xl p-5">
+          <div key={item.key} className="text-center rounded-xl p-10">
             <h2 className="text-5xl lg:text-7xl font-bold text-blue-main my-3">
               {item.frontSymbol || ""}
               <span

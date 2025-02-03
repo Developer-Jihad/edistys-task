@@ -104,7 +104,7 @@ const FutureOfFinance = () => {
   }, []);
 
   return (
-    <section className="mb-20" ref={sectionRef}>
+    <section id="finance" className="mb-20" ref={sectionRef}>
       <section className="container grid lg:grid-cols-2 grid-cols-1 items-center md:gap-4 relative lg:mt-20 px-8 lg:p-20">
         {/* Text Content */}
         <div className="space-y-4 animate-fade">

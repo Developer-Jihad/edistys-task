@@ -42,7 +42,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative">
+    <section id="hero" className="relative">
       <div
         className={`${
           isLargeScreen ? "hero-clip-lg" : "hero-clip-sm"
@@ -85,6 +85,7 @@ export default function Hero() {
                 src={heroImage}
                 alt="Hero Image"
                 fill
+                loading="lazy"
                 className="object-cover"
               />
             </div>

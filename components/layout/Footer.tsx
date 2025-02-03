@@ -25,8 +25,9 @@ export default function Footer() {
             <Link
               className="px-10 lg:px-20 text-sm py-3 mx-10 rounded-full border border-purple-400 hover:bg-purple-700"
               href="https://jihad-info.vercel.app/"
+              target="_blank"
             >
-              🧑🏻‍💻 Visit My Protfolio
+              🪐 Visit My Protfolio
             </Link>
           </div>
         </div>
